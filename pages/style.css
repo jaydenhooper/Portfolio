@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* ---------------------------------------------------------------------------------------------*/
+/* --------------------------------------- Scroll Effect ---------------------------------------*/
+/* ---------------------------------------------------------------------------------------------*/
+
+h1 {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
+body {
+    background-color: #303033;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+section.experience {
+    min-height: 50vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px); 
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+img {
+    float: left;
+    width:  auto;
+    height: 80;
+    object-fit: cover;
+}
+
+.squeeze {
+    object-fit: fill; 
+}
+
+.logos {
+    display: flex;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+/* ---------------------------------------------------------------------------------------------*/
+/* ---------------------------------- On Load Image + Text -------------------------------------*/
+/* ---------------------------------------------------------------------------------------------*/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  /* Centered text */
+  .centered {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 450%);
+  }
+
+#art {
+    filter: brightness(50%) blur(5px) grayscale(25%); 
+    
+    
+}
+
+.fade-on-load {
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-on-load:nth-child(1) {
+    animation-delay: 2s;
+}
+  
+@keyframes fadeInAnimation {
+    100% {
+        opacity: 1;
+     }
+}
+
+
+a {
+    color: rgb(26, 178, 243);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(198, 26, 10);
+    text-decoration: underline;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Centered text */
+.center {
+    position: absolute;
+    text-align: center;
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+}
+
+h1 {
+    display: grid;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+h2 {
+    display:inline-block;
+    border-bottom:1px solid rgb(255, 255, 255);
+}
