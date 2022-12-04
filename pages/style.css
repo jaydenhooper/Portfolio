@@ -4,6 +4,12 @@
 /* --------------------------------------- Scroll Effect ---------------------------------------*/
 /* ---------------------------------------------------------------------------------------------*/
 
+h1 {
+    display: grid;
+    place-items: center;
+    align-content: center;
+}
+
 body {
     background-color: #303033;
     color: #ffffff;
@@ -17,6 +23,10 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+}
+
+section.experience {
+    min-height: 50vh;
 }
 
 .hidden {
@@ -40,9 +50,13 @@ section {
 
 img {
     float: left;
-    width:  100px;
-    height: 100px;
+    width:  auto;
+    height: 80;
     object-fit: cover;
+}
+
+.squeeze {
+    object-fit: fill; 
 }
 
 .logos {
@@ -100,4 +114,39 @@ img {
     100% {
         opacity: 1;
      }
+}
+
+
+a {
+    color: rgb(26, 178, 243);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(198, 26, 10);
+    text-decoration: underline;
+}
+
+nav a{
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Centered text */
+.center {
+    position: absolute;
+    text-align: center;
+    /* left: 50%; */
+    /* transform: translate(-50%); */
+}
+
+h1 {
+    display: grid;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+h2 {
+    display:inline-block;
+    border-bottom:1px solid rgb(255, 255, 255);
 }

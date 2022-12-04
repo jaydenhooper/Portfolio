@@ -1,26 +1,76 @@
 <html>
     <head>
         <title>Jayden Hooper's Portfolio</title>
-        <link href='project.css' rel='stylesheet'>
+        <link href='style.css' rel='stylesheet'>
+        <script defer src = "app.js"></script>
     </head>
    
     <body>
-        <h1>Jayden Hooper</h1>
-        <h2>Welcome to my portfolio</h2>
 
+        <div class="container">
+            <img id = 'art' class = "blur-darken fade-on-load" 
+            src = "C:\Users\Shan & Jay\Desktop\Projects\JavaScript\Project 1\pages\external-files\Best 6\1.jpg"
+            alt="Jayden Hooper" style="width:100%; height: 100%;">
+            <div class="centered fade-on-load">
+                <h1>JAYDEN HOOPER</h1>
+            </div>
+        </div>
+
+        <script>
+            var randImg = Math.ceil(Math.random() * 6);
+            document.getElementById('art').src = "C:\\Users\\Shan & Jay\\Desktop\\Projects\\JavaScript\\Project 1\\pages\\external-files\\Best 6\\" 
+                    + randImg + ".jpg";
+        </script>
+
+        <section></section> 
+
+        <section class = "hidden ">
+            
+            <div class = "center">
+                <h2>WELCOME!</h2>
+                <p>I'm a third year computer science and data science student at VUW.</p>
+                <p>I enjoy cooking, stretching and coding.</p>
+            </div>
+        </section>
+
+        <!-- <section class = "hidden">
+            <h2>This is fun!</h2>
+            <div class="logos">
+                <div class="logo hidden">
+                    <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/08/conkers-bad-fur-day-social.jpg?q=50&fit=contain&w=943&h=&dpr=1.5"
+                    alt="conker">
+                </div>
+                <div class="logo hidden">
+                    <img src = "https://static.wikia.nocookie.net/conker/images/d/dc/Panther_king_lar.png/revision/latest?cb=20160820131028"
+                    alt="panther king">
+                </div>
+                <div class="logo hidden">
+                    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTiWi7ZGxUjJ1P3StB3KHY3seoGm5A4DINfA&usqp=CAU"
+                    alt = "fake img">
+                </div>
+            </div>
+        </section> -->
+
+        <section>
         <nav>
-            <h4>Internal Pages</h4>
+            <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./experience.html">Experience</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./resume.html">Resume</a></li>
+            </ul>
 
-            <h4>External Pages</h4>
+            <ul>
+                <li><a href="./experience.html">Experience</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./resume.html">Resume</a></li>
+            </ul>
+
+
+            <ul>
             <li><a href="https://www.linkedin.com/in/jayden-hooper/">LinkedIn</a></li>
             <li><a href="https://github.com/jaydenhooper">GitHub</a></li>
+            </ul>
         </nav>
-        
+        </section>
 
 
     </body>
