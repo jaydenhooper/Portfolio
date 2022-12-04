@@ -63,7 +63,7 @@ img {
 }
 
 /* ---------------------------------------------------------------------------------------------*/
-/* ----------------------------------- Image Behind Text ---------------------------------------*/
+/* ---------------------------------- On Load Image + Text -------------------------------------*/
 /* ---------------------------------------------------------------------------------------------*/
 .container {
     position: relative;
@@ -82,3 +82,22 @@ img {
 .blur-darken {
     filter: brightness(50%) grayscale(25%) blur(5px); 
 }
+
+.fade-on-load {
+    opacity: 0;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.fade-on-load:nth-child(1) {
+    animation-delay: 2s;
+}
+  
+@keyframes fadeInAnimation {
+    100% {
+        opacity: 1;
+     }
+}
+
+h1::after {}
