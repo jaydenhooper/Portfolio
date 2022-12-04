@@ -79,8 +79,10 @@ img {
     transform: translate(-50%, 450%);
   }
 
-.blur-darken {
-    filter: brightness(50%) grayscale(25%) blur(5px); 
+#art {
+    filter: brightness(50%) blur(5px) grayscale(25%); 
+    
+    
 }
 
 .fade-on-load {
@@ -99,5 +101,3 @@ img {
         opacity: 1;
      }
 }
-
-h1::after {}

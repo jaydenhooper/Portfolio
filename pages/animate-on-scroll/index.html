@@ -7,13 +7,22 @@
    
     <body>
 
+        
+
         <div class="container">
-            <img class = "blur-darken fade-on-load" src="C:\Users\Shan & Jay\Desktop\Projects\JavaScript\Project 1\pages\external-files\me.JPG" 
+            <img id = 'art' class = "blur-darken fade-on-load" 
+            src = "C:\Users\Shan & Jay\Desktop\Projects\JavaScript\Project 1\pages\external-files\Best 7\1.jpg"
             alt="Jayden Hooper" style="width:100%; height: 100%;">
             <div class="centered fade-on-load">
                 <h1>Jayden Hooper</h1>
             </div>
         </div>
+
+        <script>
+            var randImg = Math.ceil(Math.random() * 8);
+            document.getElementById('art').src = "C:\\Users\\Shan & Jay\\Desktop\\Projects\\JavaScript\\Project 1\\pages\\external-files\\Best 7\\" 
+                    + randImg + ".jpg";
+        </script>
 
         <section></section> 
 

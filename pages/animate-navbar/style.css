@@ -1,0 +1,40 @@
+
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: b7b7b7;
+    --text-secondary: ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #3e8abd;
+}
+
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 1.2rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #2b08f0;
+}
+
+main {
+    margin-left: 5rem;
+    padding: 1;
+}
+
+.navbar {
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary)
+}
