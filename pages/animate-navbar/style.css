@@ -2,10 +2,10 @@
 :root {
     font-size: 16px;
     font-family: 'Open Sans';
-    --text-primary: b7b7b7;
-    --text-secondary: ececec;
+    --text-primary: #b7b7b7;
+    --text-secondary: #ececec;
     --bg-primary: #23232e;
-    --bg-secondary: #3e8abd;
+    --bg-secondary: #05141f;
 }
 
 body {
@@ -29,12 +29,95 @@ body::-webkit-scrollbar-thumb {
 
 main {
     margin-left: 5rem;
-    padding: 1;
+    padding: 1rem;
 }
 
 .navbar {
     width: 5rem;
     height: 100vh;
     position: fixed;
-    background-color: var(--bg-primary)
+    background-color: var(--bg-primary);
+    transition: width 200ms ease;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 97%;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:nth-last-child(2) {
+    margin-top: auto;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 6rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    filter: grayscale(100%) opacity(0.7);
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition: var(--transition-speed);
+}
+
+.link-text {
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover {
+    width: 16rem;
+}
+
+.navbar:hover .link-text {
+    display: block;
+    font-size: 1.1rem;
+}
+
+svg {
+    color: #ff7eee;
+    transition: var(--transition-speed);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3ch;
+    width: 100%;
+}
+
+.logo svg {
+    transform: rotate(0deg);
+    transition: transform 300ms; 
+    fill: #ff7eee;
+}
+
+.navbar:hover .logo svg {
+    transform: rotate(540deg);
 }
