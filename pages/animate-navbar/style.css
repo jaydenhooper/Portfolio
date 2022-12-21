@@ -61,7 +61,8 @@ main {
 .nav-link {
     display: flex;
     align-items: center;
-    height: 6rem;
+    height: 4rem;
+    max-height: 200px;
     color: var(--text-primary);
     text-decoration: none;
     filter: grayscale(100%) opacity(0.7);
@@ -83,6 +84,7 @@ main {
 .nav-link svg {
     min-width: 2rem;
     margin: 0 1.5rem;
+    max-height: 3rem;
 }
 
 .navbar:hover {

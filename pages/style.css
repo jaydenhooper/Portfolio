@@ -94,9 +94,7 @@ img {
   }
 
 #art {
-    filter: brightness(50%) blur(5px) grayscale(25%); 
-    
-    
+    filter: brightness(50%) blur(5px) grayscale(25%);    
 }
 
 .fade-on-load {
@@ -115,7 +113,6 @@ img {
         opacity: 1;
      }
 }
-
 
 a {
     color: rgb(26, 178, 243);
