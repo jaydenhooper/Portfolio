@@ -38,6 +38,7 @@ main {
 }
 
 .navbar {
+    z-index: 1;
     width: 5rem;
     height: 100vh;
     position: fixed;
