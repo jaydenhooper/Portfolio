@@ -138,10 +138,13 @@ h1 {
     display: grid;
     place-items: center;
     align-content: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 h2 {
     padding: 0;
+    display:inline-block;
+    border-bottom:1px solid rgb(255, 255, 255); 
 }
 
 section li {
@@ -159,13 +162,13 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 50vh;
-    padding: 150;
+    min-height: 100vh;
+    padding: 25;
 }
 
 img {
     float: left;
-    width:  auto;
+    width: auto;
     height: 80;
     object-fit: cover;
 }
@@ -240,19 +243,8 @@ nav a{
     text-align: center;
 }
 
-h1 {
-    display: grid;
-    border-bottom: 2px solid rgb(255, 255, 255);
-}
-
-h2 {
-    display:inline-block;
-    border-bottom:1px solid rgb(255, 255, 255);
-}
-
-
 /* ---------------------------------------------------------------------------------------------*/
-/* ----------------------------------------- Style ---------------------------------------------*/
+/* ---------------------------------- Miscellaneous Styling ------------------------------------*/
 /* ---------------------------------------------------------------------------------------------*/
 
 .italic {
