@@ -136,9 +136,6 @@ svg {
 /* ---------------------------------------------------------------------------------------------*/
 
 h1 {
-    display: grid;
-    place-items: center;
-    align-content: center;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
 
@@ -160,9 +157,10 @@ body {
 }
 
 section {
-    display: grid;
-    place-items: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 25;
 }
