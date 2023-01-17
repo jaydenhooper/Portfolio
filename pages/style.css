@@ -160,11 +160,18 @@ body {
 }
 
 section {
+    min-height: 100vh;
+    padding-left: 20%;
+    padding-right: 20%;
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
-    /* padding: 25; */
+    text-align: center;
+}
+
+/* text align on bullet points looks ugly */
+section ul {
+    text-align: initial;
 }
 
 img {
@@ -236,13 +243,6 @@ a:hover {
 nav a{
     color: white;
     font-size: 20px;
-}
-
-/* Centered text */
-.center {
-    /* position: absolute; */
-    text-align: center;
-    padding: 20% 20%;
 }
 
 /* ---------------------------------------------------------------------------------------------*/
