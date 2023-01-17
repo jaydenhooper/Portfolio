@@ -164,7 +164,7 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    padding: 25;
+    /* padding: 25; */
 }
 
 img {
@@ -240,8 +240,9 @@ nav a{
 
 /* Centered text */
 .center {
-    position: absolute;
+    /* position: absolute; */
     text-align: center;
+    padding: 20% 20%;
 }
 
 /* ---------------------------------------------------------------------------------------------*/
