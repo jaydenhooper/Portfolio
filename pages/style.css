@@ -169,9 +169,37 @@ section {
     text-align: center;
 }
 
+.split-screen {
+    padding-left:7rem;
+    padding-right: 0rem;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background: #01200d;
+}
+
+.split-screen-home {
+    padding-left:0%;
+    padding-right:0%;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background: #01200d;
+}
+
+.text {
+    padding-right: 1rem;
+}
+
+.imgs {
+    padding-left:2rem;
+    max-height: 100vh;
+}
+
 /* text align on bullet points looks ugly */
 section ul {
     text-align: initial;
+    
 }
 
 img {
