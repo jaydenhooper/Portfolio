@@ -175,15 +175,9 @@ section {
     display: flex;
     justify-content: space-around;
     align-items:center;
-    background: #01200d;
 }
 
-.split-screen-home {
-    padding-left:0%;
-    padding-right:0%;
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
+.chess {
     background: #01200d;
 }
 
@@ -193,7 +187,8 @@ section {
 
 .imgs {
     padding-left:2rem;
-    max-height: 100vh;
+    padding-right: 1rem;
+    max-height:100vh;
 }
 
 /* text align on bullet points looks ugly */
